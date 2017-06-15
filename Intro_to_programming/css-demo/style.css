@@ -1,0 +1,14 @@
+/* This is a CSS comment.*/
+
+
+.description{
+  background-color : yellow;
+   color: red;
+   font-style: oblique;
+   font-weight: 600;
+ }
+
+/*
+Comments are only to help PEOPLE read a code file. The
+computer ignores them.
+*/
