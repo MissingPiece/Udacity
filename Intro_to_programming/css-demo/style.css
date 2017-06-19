@@ -1,11 +1,28 @@
 /* This is a CSS comment.*/
 
-
+.app {\
+    display: -webkit-flex;
+    display: flex;
+}
+.title{
+  background-color: #33BEBE;
+  font-size: 100px;
+  color: white;
+  font-style: times new roman;
+}
 .description{
-  background-color : yellow;
-   color: red;
+  background-color : white;
+   color: #7C8B88;
    font-style: oblique;
    font-weight: 600;
+ }
+.body{
+  margin: 8px;
+   margin-top: 500px;
+   margin-right: 8px;
+   margin-bottom: 8px;
+   margin-left: 8px;
+
  }
 
 /*
