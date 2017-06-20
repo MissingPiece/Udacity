@@ -1,8 +1,43 @@
+/*
+Author: Kevin Hyun
+Creation Date: 20 June 2017
+Project: MakeaWebPage Udacity
+*/
+
+.app{
+    flex: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     background-color: powderblue;
 }
-h1 {
-    color: blue;
+.Introduction {
+    color: red;
+    font-size: 50px;
+}
+.Explanation{
+  font-size: 15px;
+}
+.highlight{
+  font-style: italic;
+  font-size: 110%;
+   color: green;
+}
+.Flex{
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-end;
+}
+.Sana_Twice{
+  max-width: 30%;
+  max-height: 30%;
+}
+.text_flex{
+  background-color: red;
+  font-size: 25px;
 }
 p {
     color: red;
