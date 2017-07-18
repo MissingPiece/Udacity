@@ -19,7 +19,7 @@ def game_start ():
             print ("weak sauce")
             easy_board()
         elif (mode_choice == "medium"):
-            print ("mild.")
+            print ("mild")
             #medium_board(0)
         elif (mode_choice == "hard"):
             print ("diablo 3 on hardcore")
@@ -46,6 +46,52 @@ def easy_board ():
         text = "What is 1 + 1? " + placement_holder[0] + '\n' + "What is answer 1 multiplied by 3? " + placement_holder[1] + '\n' + "What is answer 2 squared? " + placement_holder[2] + '\n' + "Answer 3 divided by 2? " + placement_holder[3]+ '\n'
         print text
 
+        input_Easy = raw_input("Your answer for  " + placement_holder[index])
+        if(input_Easy == answer_Key[index]):
+            if(index == 3):
+                placement_holder[index] = answer_Key[index]
+                game_end()
+
+            else:
+                placement_holder[index] = answer_Key[index]
+                index += 1
+                counter_limit = 0
+        else:
+            counter_limit +=1
+            print "Wrong, try again you have " + str(3 - counter_limit) + " try(ies) left"
+def medium_board ():
+    """ Inteded: Guide users through questions for accurate answers, within a certain number of tries and finish the game : No input, no output"""
+    counter_limit, index = 0,0
+    placement_holder = ['Answer 1','Answer 2','Answer 3','Answer 4']
+    answer_Key = ['d','zebra','basebal','football']
+
+    text = "What letter comes after?: {a, b, c}? " + placement_holder[0] + '\n' + "What animal has stripes and looks like a donkey? " + placement_holder[1] + '\n' + "What sport is called the old American Pasttime ? " + placement_holder[2] + '\n' + "What sport is the modern American Pasttime ? " + placement_holder[3]
+
+    while(counter_limit < 2):
+    text = "What letter comes after?: {a, b, c}? " + placement_holder[0] + '\n' + "What animal has stripes and looks like a donkey? " + placement_holder[1] + '\n' + "What sport is called the old American Pasttime ? " + placement_holder[2] + '\n' + "What sport is the modern American Pasttime ? " + placement_holder[3]
+        input_Easy = raw_input("Your answer for  " + placement_holder[index])
+        if(input_Easy == answer_Key[index]):
+            if(index == 3):
+                placement_holder[index] = answer_Key[index]
+                game_end()
+
+            else:
+                placement_holder[index] = answer_Key[index]
+                index += 1
+                counter_limit = 0
+        else:
+            counter_limit +=1
+            print "Wrong, try again you have " + str(3 - counter_limit) + " try(ies) left"
+def hard_board ():
+    """ Inteded: Guide users through questions for accurate answers, within a certain number of tries and finish the game : No input, no output"""
+    counter_limit, index = 0,0
+    placement_holder = ['Answer 1','Answer 2','Answer 3','Answer 4']
+    answer_Key = ['iron','42','venus','giraffe']
+
+    text = "Spinach is high in which mineral? " + placement_holder[0] + '\n' + "What's the total number of dots on a pair of dice? " + placement_holder[1] + '\n' + "Which planet is the closest to Earth? " + placement_holder[2] + '\n' + "What is the tallest mammal?" + placement_holder[3]
+
+    while(counter_limit < 2):
+    text = "Spinach is high in which mineral? " + placement_holder[0] + '\n' + "What's the total number of dots on a pair of dice? " + placement_holder[1] + '\n' + "Which planet is the closest to Earth? " + placement_holder[2] + '\n' + "What is the tallest mammal?" + placement_holder[3]
         input_Easy = raw_input("Your answer for  " + placement_holder[index])
         if(input_Easy == answer_Key[index]):
             if(index == 3):
